@@ -22,4 +22,13 @@
     f: 0 because false maps to 0 and null doesn't add anything
     g: '3undefined' because undefined maps to 'undefined' as a string and it gets concatenated with '3'
     h: NaN or "not a number" because we cannot subtract undefined from '3' converted to an int
-14. a: 
+14. a: true because '2' maps to 2 which is greater than 1
+    b: false because it compares them as strings and as strings '2' is > '12'
+    c: true because '2' gets converted to an integer when comparing
+    d: false because they are differemt types
+    e: false because true is 1 as an integer value which isnt equal to 1
+    f: true because Boolean(2) evaluates to true
+15. == tries to convert the types and compare, === tries to compare only if they are the same type, if they are a different type it returns false
+17. The result will be [2,4,6]. This is because the array 1,2,3 is passed in along with the doSomething function which multiplies its input by 2. Inside the function there is a loop that loops through and passes each array item into the function and pushes the result into a new array which is then returned. 
+19. The code outputs 1 4 3 2. It does this because the times are set different for when 2 and 3 are printed.
+
